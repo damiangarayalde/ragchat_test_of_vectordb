@@ -1,5 +1,5 @@
 firebase-admin>=6.2.0
-python-multipart>=0.0.5  # For file uploads
+#python-multipart>=0.0.5  # For file uploads
 #llama-index-core==0.10.20
 #llama-index-readers-file==0.1.7
 #llama-index-vector-stores-chroma==0.1.7
@@ -8,17 +8,3 @@ langchain>=0.0.348
 #python-dotenv>=1.0.0
 pypdf>=3.17.4
 # nuevo llama-index-embeddings-openai
-
-# Create a fresh virtual environment with Python 3.11
-
-# xcode-select --install
-# brew install cmake  libomp
-# nano ~/.zshrc
-# export LDFLAGS="-L/opt/homebrew/opt/libomp/lib"
-# export CPPFLAGS="-I/opt/homebrew/opt/libomp/include"
-# export SDKROOT=$(xcrun --show-sdk-path)
-# export ARCHFLAGS="-arch arm64"  # Avoid unsupported flags like `-march=native` :cite[1]:cite[8]
-
-# python3.11 -m venv venv
-# source venv/bin/activate
-#pip install chromadb==0.4.22 --no-cache-dir --pre

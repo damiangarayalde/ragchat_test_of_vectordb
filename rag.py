@@ -48,33 +48,3 @@ question = "Cuales son las dos tematicas principales del documento?, listalo com
 response = query_engine.query(question)
 print(f"\nQuestion: {question}")
 print(f"Answer: {response}\n")
-
-# # Option 2: Chat interface with memory
-# chat_engine = index.as_chat_engine(
-#     chat_mode="context",  # Options: "simple", "context", "condense_question"
-#     system_prompt="You are a helpful assistant that answers questions based on the provided documents.",
-#     verbose=True
-# )
-
-# # Custom prompt template
-# custom_prompt = PromptTemplate("""\
-# Context information is below.
-# ---------------------
-# {context_str}
-# ---------------------
-# Given the context information and not prior knowledge, answer the query.
-# Query: {query_str}
-# Answer: \
-# """)
-
-# # Ask follow-up questions
-# questions = [
-#     "Summarize the key points?",
-#     "What are the most surprising findings?"
-# ]
-
-# for q in questions:
-#     response = chat_engine.chat(custom_prompt.format(query_str=q))
-#     print(f"Question: {q}")
-#     print(f"Answer: {response}\n")
-#     print("="*50)
